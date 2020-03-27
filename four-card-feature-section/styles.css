@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #f9f6f7;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+
+
+.flex-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: auto;
+}
+
+.flex-container-inner {
+  flex-direction: column;
+}
+
+.card {
+  background-color: #fff;
+  margin: 1rem;
+  border-radius: 4px;
+  height: 10.5rem;
+  width: 16.3rem;
+  padding: 0.9rem;
+  box-shadow: 3px 4px 7px 0 #323232;
+  text-align: left;
+  align-content: flex-end;
+}
+
+
+.card-image {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-bottom: 30px;
+}
+
+.card p{
+  font-weight: lighter;
+  font-size: small;
+}
+
+
+.supervisor {
+  border-top: solid 4px #3282b8;
+}
+
+.team-builder {
+  border-top: solid 4px #ffa41b;
+}
+
+.karma {
+  border-top: solid 4px #ff1e56;
+}
+
+.calculator {
+  border-top: solid 4px #3282b8;
+}
+
+#header {
+  margin: 5% 15%;
+  text-align: center;
+}
+
+#header p {
+  width: 50%;
+  margin: 0 auto 0 auto;
+}
+
+@media screen and (max-width: 375px){
+  .flex-container {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    height: auto;
+  }
+}
