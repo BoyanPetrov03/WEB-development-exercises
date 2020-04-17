@@ -1,0 +1,234 @@
+
+body {
+  margin: 0;
+  padding: 1% 15%;
+  font-family: 'Inter', sans-serif;
+  background-color: #fff;
+}
+
+h3 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 3rem;
+}
+
+#overview {
+  font-size: 2.5rem;
+}
+
+.dark-h1 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+
+.dark-h3{
+
+  font-size: 3rem;
+  margin: 0;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+
+.box-up {
+  margin: 1rem auto;
+}
+
+table {
+  border-spacing: 3rem 0;
+  border-collapse: separate;
+}
+
+td {
+  padding: 10px 0;
+}
+
+
+
+.img {
+  margin-right: 0.5rem;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.boxes {
+  display: flex;
+}
+
+.upper-box {
+  color: hsl(228, 34%, 66%);
+  text-align: center;
+  background-color: hsl(228, 28%, 20%);
+  width: 312px;
+  height: 250px;
+  padding: 1rem auto;
+  border-radius: 7px;
+  font-weight: 700;
+}
+
+
+.facebook {
+  border-top: 4px solid hsl(195, 100%, 50%);
+}
+
+.twitter {
+  border-top: 4px solid hsl(203, 89%, 53%);
+}
+
+.instagram {
+  border-top: 4px solid;
+  border-image-source: linear-gradient(-45deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  border-image-slice: 0.5;
+}
+
+.youtube {
+  border-top: 4px solid hsl(348, 97%, 39%);
+}
+
+
+/* LOWER SECTION */
+
+.lower-box {
+  color: hsl(228, 34%, 66%);
+  text-align: center;
+  background-color: hsl(228, 28%, 20%);
+  width: 312px;
+  height: 150px;
+  margin: 1rem auto;
+  padding-top: 1rem;
+  border-radius: 7px;
+  font-weight: 700;
+}
+
+
+.lower-number {
+  font-size: 2.5rem;
+  color: hsl(0, 0%, 100%);
+}
+
+
+
+/* LIGHT THEME */
+
+
+.light-h1 {
+  color: hsl(230, 17%, 14%);
+  font-weight: 700;
+}
+
+.light-upper-box {
+  color: hsl(228, 12%, 44%);
+  text-align: center;
+  background-color: hsl(227, 47%, 96%);
+  width: 312px;
+  height: 250px;
+  padding: 1rem auto;
+  border-radius: 7px;
+  font-weight: 700;
+}
+
+.light-h3 {
+  font-size: 3rem;
+  margin: 0;
+  color: hsl(230, 17%, 14%);
+  font-weight: 700;
+}
+
+.lower-box-light {
+  color: hsl(228, 12%, 44%);
+  text-align: center;
+  background-color: hsl(227, 47%, 96%);
+  width: 312px;
+  height: 150px;
+  margin: 1rem auto;
+  padding-top: 1rem;
+  border-radius: 7px;
+  font-weight: 700;
+}
+
+
+
+
+
+/* BUTTON */
+
+
+
+input[type="checkbox"]
+{
+  -webkit-appearance: none;
+  visibility: hidden;
+  display: none;
+}
+
+
+.check {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 20px;
+  background: hsl(230, 17%, 14%);
+  cursor: pointer;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: ease-in 0.5s;
+}
+input[type="checkbox"]:checked ~ .check
+{
+  z-index: -1;
+  background: #fff;
+  box-shadow: 0 0 0 4000px hsl(230, 17%, 14%);
+}
+.check:before
+{
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: #fff;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+input[type="checkbox"]:checked ~ .check:before
+{
+  transform: translateX(-50px);
+}
+
+
+.check:after
+{
+  content: '';
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background: hsl(230, 17%, 14%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  transition: 0.5s;
+  transform: translateX(50px);
+}
+
+input[type="checkbox"]:checked ~ .check:after
+{
+  transform: translateX(0px);
+}
+
+
+
+
+/* RESPONSIVNESS */
+
+
+@media only screen and (max-width: 600px) {
+  .boxes {
+    display: flex;
+    flex-direction: column;
+  }
+}
